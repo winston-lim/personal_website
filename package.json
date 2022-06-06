@@ -8,6 +8,24 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "commitplease": {
+    "limits": {
+      "firstLine": "72",
+      "otherLine": "80"
+    },
+    "style": "jquery",
+    "component": true,
+    "components": [
+      "Build",
+      "Fix",
+      "Develop",
+      "Refactor",
+      "Delete",
+      "Merge",
+      "Test",
+      "Update"
+    ]
+  },
   "dependencies": {
     "next": "12.1.6",
     "react": "18.1.0",
