@@ -4,9 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build:development": "env-cmd -f .env.devsite next build",
+    "build:production": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+    "postinstall": "husky install",
+    "prepare": "husky install",
+    "commitmsg": "node node_modules/commitplease .git/COMMIT_EDITMSG"
   },
   "commitplease": {
     "limits": {
