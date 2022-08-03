@@ -1,0 +1,58 @@
+@import 'styles/mixins.scss';
+
+.hideOnMobile {
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: block;
+  }
+}
+
+.hideOnMobileAndTablet {
+  @include sm {
+    display: none;
+  }
+  @include msd {
+    display: none;
+  }
+  @include md {
+    display: block;
+  }
+}
+
+.hideOnTabletAndDesktop {
+  @include md {
+    display: none;
+  }
+  @include msd {
+    display: none;
+  }
+  @include sm {
+    display: block;
+  }
+}
+
+.hideOnMobileAndDesktop {
+  @include md {
+    display: none;
+  }
+  @include msd {
+    display: block;
+  }
+  @include sm {
+    display: none;
+  }
+}
+
+.hideOnDesktop {
+  @include sm {
+    display: block;
+  }
+  @include msd {
+    display: block;
+  }
+  @include md {
+    display: none;
+  }
+}

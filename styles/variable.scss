@@ -1,0 +1,83 @@
+/*******************************************/
+/*                INITIAL                  */
+/*******************************************/
+
+$minWidth: 1024px;
+$sideWidth: 205px;
+
+/*******************************************/
+/*               BOX SHADOW                */
+/*******************************************/
+
+$box-shadow-1: 0px 3px 6px rgba(149, 150, 150, 0.6);
+
+/*******************************************/
+/*           BACKGROUND COLORS             */
+/*******************************************/
+$bg-lightgrey: rgba(188, 188, 188, 0.1);
+
+/*******************************************/
+/*                 COLORS                  */
+/*******************************************/
+
+// $primaryBlue: #2379ea;
+$primaryBlue: #2379ea;
+$darkBlue: #163f72;
+$darkBlue-1: #0052CC;
+$lightgrey: #bcbcbc;
+$lightgrey-2: #e2e2e2;
+$lightgrey-3: #f0f0f0;
+$darkgrey: #707070;
+// background
+$white-1: #f9f9f9;
+// border
+$white-2: #f0f0f0;
+// standard white
+$white-3: #ffffff;
+$overlay: #353535;
+$dividerLine: #dedede;
+$red: #FF4747;
+$black: #353535;
+$pink: #FF3A99;
+$pink-1: #F50057;
+$cyan: #00BAD3;
+
+/*******************************************/
+/*                 SIZES                  */
+/*******************************************/
+
+$desktop-font-size-xsm: 11px;
+$desktop-font-size-sm: 12px;
+$desktop-font-size-base: 14px;
+$desktop-font-size-lg: 16px;
+$desktop-font-size-xl: 18px;
+$desktop-font-size-xxl: 21px;
+$desktop-font-size-xxxl: 27px;
+
+$mobile-font-size-xsm: 11px;
+$mobile-font-size-sm: 12px;
+$mobile-font-size-base: 14px;
+$mobile-font-size-lg: 16px;
+$mobile-font-size-xl: 18px;
+$mobile-font-size-xxl: 21px;
+$mobile-font-size-xxxl: 21px;
+
+
+/*******************************************/
+/*                 Custom                  */
+/*******************************************/
+.GlobalContainer {
+  max-width: 1166px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+
+  @media (max-width: 799px) {
+    max-width: 688px;
+  }
+
+  @media (max-width: 360px) {
+    max-width: 320px;
+  }
+}
