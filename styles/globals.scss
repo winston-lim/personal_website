@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Product+Sans:300,400,500,700,300i,400i,500i,700i&display=swap');
+
+$rootFontSize: 16px;
+
+:root {
+  font-size: $rootFontSize;
+}
+
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Product Sans' !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
