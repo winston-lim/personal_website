@@ -1,20 +1,17 @@
+import { Box } from '@chakra-ui/react'
 import React from 'react'
+import Footer from '../components/Footer'
 
 type Props = {}
 
 const MaintenancePage = ({}: Props) => {
   return (
-    <div
-      style={{
-        width: '100%',
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      Currently under maintenance
-    </div>
+    <Box w='100%' h='100vh' display='flex' flexDir='column'>
+      <Box w='100%' flexGrow={1} display='flex' justifyContent='center' alignItems='center'>
+        Currently under maintenance
+      </Box>
+      <Footer />
+    </Box>
   )
 }
 
