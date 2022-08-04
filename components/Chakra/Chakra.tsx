@@ -1,5 +1,5 @@
 import { ChakraProvider, cookieStorageManagerSSR, localStorageManager } from '@chakra-ui/react'
-import theme from 'pages/theme'
+import theme from 'theme'
 
 type ChakraProps = {
   cookies: any
