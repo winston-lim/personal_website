@@ -30,7 +30,8 @@
     "pages/*.tsx",
     "pages/**/*.tsx",
     "pages/*.jsx",
-    "pages/**/*.jsx"
+    "pages/**/*.jsx",
+    "next.config.js"
   ],
   "exclude": [
     "node_modules"
