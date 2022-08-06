@@ -3,11 +3,11 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 // import styles from 'styles/Home.module.scss'
 import Footer from '../components/Footer'
-import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineFile } from 'react-icons/ai'
-
+import { Link, Text } from '@chakra-ui/react'
+import { FaLinkedin, FaGithub, FaFile } from 'react-icons/fa'
 const Home: NextPage = () => {
   return (
-    <Box w='100%' h='100vh' display='flex' flexDir='column'>
+    <Box color='primary' bgColor='background' w='100%' h='100vh' display='flex' flexDir='column'>
       <Head>
         <title>Winston Lim</title>
         <meta name='description' content="Winston's personal website" />
@@ -16,6 +16,7 @@ const Home: NextPage = () => {
       <Box w='100%' flexGrow={1} padding='16px 16px 0px 16px'>
         <Box
           w={['400px', '500px', '800px']}
+          maxW='100%'
           h='100%'
           display='flex'
           flexDir='column'
@@ -23,33 +24,49 @@ const Home: NextPage = () => {
           alignItems='center'
           margin='auto'
         >
-          <Avatar />
-          <Heading size={['xl', '2xl', '4xl']}>Winston Lim</Heading>
-          <Box marginBottom='16px'>Year 2 Computer Engineering Undergraduate @ NUS</Box>
-          <Box>
-            <Button
-              bgColor='transparent'
-              marginRight='8px'
-              aria-label='linkedin-button'
-              leftIcon={<Icon backgroundClip='none' as={AiOutlineLinkedin} />}
+          <Avatar w='200px' h='200px' src='/profile-avatar.jpeg' />
+          <Heading size={['2xl', '4xl']}>Winston Lim</Heading>
+          <Box color='whiteAlpha.800' marginBottom='16px'>
+            Year 2 Computer Engineering Undergraduate @ NUS
+          </Box>
+          <Box color='accent'>
+            <Link
+              style={{ textDecoration: 'none' }}
+              href='https://www.linkedin.com/in/winston-lim-ch/'
+              isExternal
             >
-              LinkedIn
-            </Button>
-            <Button
-              bgColor='transparent'
-              marginRight='10px'
-              aria-label='github-button'
-              leftIcon={<Icon as={AiOutlineGithub} />}
+              <Button
+                bgColor='transparent'
+                marginRight='8px'
+                aria-label='linkedin-button'
+                leftIcon={<Icon as={FaLinkedin} />}
+              >
+                LinkedIn
+              </Button>
+            </Link>
+            <Link
+              style={{ textDecoration: 'none' }}
+              href='https://github.com/winston-lim'
+              isExternal
             >
-              Github
-            </Button>
-            <Button
-              bgColor='transparent'
-              aria-label='resume-button'
-              leftIcon={<Icon sx={{ bgColor: 'transparent' }} as={AiOutlineFile} />}
-            >
-              Resume
-            </Button>
+              <Button
+                bgColor='transparent'
+                marginRight='10px'
+                aria-label='github-button'
+                leftIcon={<Icon as={FaGithub} />}
+              >
+                Github
+              </Button>
+            </Link>
+            <Link style={{ textDecoration: 'none' }} href='/resume.pdf'>
+              <Button
+                bgColor='transparent'
+                aria-label='resume-button'
+                leftIcon={<Icon as={FaFile} />}
+              >
+                Resume
+              </Button>
+            </Link>
           </Box>
         </Box>
       </Box>
