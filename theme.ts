@@ -10,9 +10,9 @@ const theme = extendTheme({
   config,
   colors: {
     transparent: 'transparent',
-    primaryColor: '#92DCE5',
-    accentColor: '#FCDDBC',
-    backgroundColor1: '#494947',
+    primary: '#92DCE5',
+    accent: '#FCDDBC',
+    background: '#494947',
   },
 })
 
