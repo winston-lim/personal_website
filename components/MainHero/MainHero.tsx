@@ -1,7 +1,7 @@
-import { Box, Avatar, Heading, Button, Icon, Link } from '@chakra-ui/react'
+import { Box, Avatar, Heading, Button, Icon, Link, Stack, VStack } from '@chakra-ui/react'
 
 import React from 'react'
-import { FaLinkedin, FaGithub, FaFile, FaArrowRight } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaFile } from 'react-icons/fa'
 
 type MainHeroProps = {}
 
@@ -19,13 +19,14 @@ const MainHero = ({}: MainHeroProps) => {
         margin='auto'
       >
         <Avatar w='200px' h='200px' src='/profile-avatar.jpeg' />
-        <Heading color='white' size={['2xl', '4xl']}>
+        <Heading color='white' size={['2xl', '4xl']} marginBottom='16px'>
           Winston Lim
         </Heading>
-        <Box color='whiteAlpha.800' marginBottom='16px'>
-          Year 2 Computer Engineering Undergraduate @ NUS
-        </Box>
-        <Box color='accent2'>
+        <VStack alignItems='center' color='whiteAlpha.800' marginBottom='8px'>
+          <Box color='whiteAlpha.800'>Card & Pay Frontend Intern @ Binance</Box>
+          <Box color='whiteAlpha.800'>Year 2 Computer Engineering Undergraduate @ NUS</Box>
+        </VStack>
+        <Box>
           <Link
             style={{ textDecoration: 'none' }}
             href='https://www.linkedin.com/in/winston-lim-ch/'
