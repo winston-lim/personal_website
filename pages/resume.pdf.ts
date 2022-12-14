@@ -7,9 +7,7 @@ const Resume = () => {
 
 export const getServerSideProps = async ({ res }) => {
   const dataFilePath = path.join(process.cwd(), 'public', 'winston-resume.pdf')
-  console.log(dataFilePath)
   const fileContents = fs.readFileSync(dataFilePath)
-  console.log(fileContents)
   res.setHeader('Content-Type', 'application/pdf')
   res.write(fileContents)
   res.end()
