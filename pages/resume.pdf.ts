@@ -5,7 +5,7 @@ const Resume = () => {
   return
 }
 
-export const getStaticProps = async ({ res }) => {
+export const getServerSideProps = async ({ res }) => {
   const dataFilePath = path.join(process.cwd(), 'public', 'winston-resume.pdf')
   const fileContents = fs.readFileSync(dataFilePath)
   res.setHeader('Content-Type', 'application/pdf')
