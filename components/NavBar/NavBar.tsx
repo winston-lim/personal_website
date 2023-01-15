@@ -1,6 +1,6 @@
 import { Box, Breadcrumb, BreadcrumbItem, Button, Link } from '@chakra-ui/react'
 import React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
+import NextLink from 'next/link'
 
 type NavBarProps = {}
 
@@ -9,11 +9,12 @@ const NavBar = ({}: NavBarProps) => {
     <Box
       as='header'
       backgroundColor='header'
-      height={['60px', '60px', '70px', '80px']}
+      height={['60px', '70px']}
       paddingStart='10%'
       display='flex'
       alignItems='center'
       position='sticky'
+      top='0'
     >
       <Link style={{ textDecoration: 'none', color: 'white' }} href='/'>
         <Button bgColor='transparent' marginRight='10px' aria-label='home-button'>

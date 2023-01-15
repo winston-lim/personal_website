@@ -1,4 +1,3 @@
-import 'styles/globals.scss'
 import { Analytics } from '@vercel/analytics/react'
 import type { AppProps } from 'next/app'
 import { Chakra } from 'components/Chakra/Chakra'
