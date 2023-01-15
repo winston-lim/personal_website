@@ -1,6 +1,8 @@
-import { Box, Avatar, Heading, Button, Icon, Link, Stack, VStack } from '@chakra-ui/react'
-
 import React from 'react'
+
+import NextLink from 'next/link'
+
+import { Box, Avatar, Heading, Button, Icon, Link, Stack, VStack } from '@chakra-ui/react'
 import { FaLinkedin, FaGithub, FaFile } from 'react-icons/fa'
 
 type MainHeroProps = {}
@@ -51,7 +53,7 @@ const MainHero = ({}: MainHeroProps) => {
               Github
             </Button>
           </Link>
-          <Link style={{ textDecoration: 'none' }} href='/resume.pdf'>
+          <NextLink style={{ textDecoration: 'none' }} href='/resume.pdf'>
             <Button
               bgColor='transparent'
               aria-label='resume-button'
@@ -59,7 +61,7 @@ const MainHero = ({}: MainHeroProps) => {
             >
               Resume
             </Button>
-          </Link>
+          </NextLink>
         </Box>
       </Box>
     </Box>
