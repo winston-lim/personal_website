@@ -1,7 +1,5 @@
 import React from 'react'
 
-import NextLink from 'next/link'
-
 import { Box, Avatar, Heading, Button, Icon, Link, Stack, VStack } from '@chakra-ui/react'
 import { FaLinkedin, FaGithub, FaFile } from 'react-icons/fa'
 
@@ -51,6 +49,7 @@ const MainHero = ({}: MainHeroProps) => {
             Github
           </Button>
         </Link>
+        {/* Do not use NextLink, it causes a crash */}
         <Link style={{ textDecoration: 'none' }} href='/resume.pdf'>
           <Button bgColor='transparent' aria-label='resume-button' leftIcon={<Icon as={FaFile} />}>
             Resume
