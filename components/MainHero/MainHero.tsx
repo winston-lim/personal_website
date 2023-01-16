@@ -51,11 +51,11 @@ const MainHero = ({}: MainHeroProps) => {
             Github
           </Button>
         </Link>
-        <NextLink style={{ textDecoration: 'none' }} href='/resume.pdf'>
+        <Link style={{ textDecoration: 'none' }} href='/resume.pdf'>
           <Button bgColor='transparent' aria-label='resume-button' leftIcon={<Icon as={FaFile} />}>
             Resume
           </Button>
-        </NextLink>
+        </Link>
       </Box>
     </Box>
   )
