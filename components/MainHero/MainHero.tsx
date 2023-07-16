@@ -23,8 +23,8 @@ const MainHero = ({}: MainHeroProps) => {
         Winston Lim
       </Heading>
       <VStack alignItems='center' color='whiteAlpha.800' marginBottom={['4px', '8px']}>
-        <Box color='whiteAlpha.800'>Card & Pay Frontend Intern @ Binance</Box>
-        <Box color='whiteAlpha.800'>Year 2 Computer Engineering Undergraduate @ NUS</Box>
+        <Box color='whiteAlpha.800'>Fullstack SWE Intern @ TikTok, Trust and Safety</Box>
+        <Box color='whiteAlpha.800'>Year 3 Computer Engineering Undergraduate @ NUS</Box>
       </VStack>
       <Box>
         <Link
